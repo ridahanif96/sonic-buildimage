@@ -29,6 +29,7 @@
                         "fast_rate": "false",
                         "fallback" : "false",
                         "mode" :  "routed"
+
                     }
                 ]
             }
@@ -121,23 +122,6 @@
             }
         }
     },
-
-    "PORT_CHANNEL_INVALID_MODE": {
-        "sonic-portchannel:sonic-portchannel": {
-            "sonic-portchannel:PORTCHANNEL": {
-                "PORTCHANNEL_LIST": [
-                    {
-                        "admin_status": "up",
-                        "mtu": "9100",
-                        "tpid" :  "0x9100",
-                        "name": "PortChannel0001",
-                        "mode": "off"
-
-                    }
-                ]
-            }
-        }
-    },
     
     "PORT_CHANNEL_INVALID_FALLBACK": {
         "sonic-portchannel:sonic-portchannel": {
@@ -154,6 +138,24 @@
             }
         }
     },
+    
+     "PORT_CHANNEL_INVALID_MODE": {
+        "sonic-portchannel:sonic-portchannel": {
+            "sonic-portchannel:PORTCHANNEL": {
+                "PORTCHANNEL_LIST": [
+                    {
+                        "admin_status": "up",
+                        "mtu": "9100",
+                        "tpid" :  "0x9100",
+                        "name": "PortChannel0001",
+                        "mode": "off"
+
+                    }
+                ]
+            }
+        }
+    },
+    
     "PORT_CHANNEL_INVALID_FAST_RATE": {
         "sonic-portchannel:sonic-portchannel": {
             "sonic-portchannel:PORTCHANNEL": {

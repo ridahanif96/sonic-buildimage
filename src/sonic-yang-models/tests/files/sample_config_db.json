@@ -613,8 +613,7 @@
                 "speed": "11100",
                 "tpid": "0x8100",
                 "admin_status": "up",
-                "subport": "6",
-                "mode": "routed"
+                "subport": "6"
             },
             "Ethernet9": {
                 "alias": "Eth3/2",
