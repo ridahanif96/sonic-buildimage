@@ -1319,7 +1319,9 @@ optional attributes.
             "speed": "40000",
             "link_training": "on",
             "laser_freq": "191300",
-            "tx_power": "-27.3"
+            "tx_power": "-27.3",
+            "mode": "routed"
+
         },
         "Ethernet63": {
             "index": "63",
