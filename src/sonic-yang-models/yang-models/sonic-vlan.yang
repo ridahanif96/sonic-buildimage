@@ -247,8 +247,8 @@ module sonic-vlan {
 						}
 					}
 
-				 must "(/VLAN/mode = 'access' or /VLAN/mode = 'trunk')"
-				 error-message "VLAN member assignment is only allowed when port is in access or trunk mode.";
+				   must "(/VLAN/mode = 'access' or /VLAN/mode = 'trunk')"
+				   error-message "VLAN member assignment is only allowed when port is in access or trunk mode.";
 	
 				}
 

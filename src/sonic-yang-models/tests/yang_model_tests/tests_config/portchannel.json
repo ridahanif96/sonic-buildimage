@@ -28,7 +28,7 @@
                         "name": "PortChannel0001",
                         "fast_rate": "false",
                         "fallback" : "false",
-                        "mode" :  "routed"
+                        "mode" : "routed"
                     }
                 ]
             }
@@ -57,7 +57,9 @@
                         "admin_status": "up",
                         "min_links": "1024",
                         "mtu": "9100",
-                        "name": "PortChannel0001"
+                        "name": "PortChannel0001",
+                        "mode": "routed"
+
                     }
                 ]
             }
@@ -86,9 +88,7 @@
                         "admin_status": "up",
                         "min_links": "1025",
                         "mtu": "9100",
-                        "name": "PortChannel0001",
-                        "mode": "routed"
-
+                        "name": "PortChannel0001"
                     }
                 ]
             }
@@ -121,7 +121,6 @@
             }
         }
     },
-
     "PORT_CHANNEL_INVALID_MODE": {
         "sonic-portchannel:sonic-portchannel": {
             "sonic-portchannel:PORTCHANNEL": {
@@ -138,7 +137,6 @@
             }
         }
     },
-    
     "PORT_CHANNEL_INVALID_FALLBACK": {
         "sonic-portchannel:sonic-portchannel": {
             "sonic-portchannel:PORTCHANNEL": {
