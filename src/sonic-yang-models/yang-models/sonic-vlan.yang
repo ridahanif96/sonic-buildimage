@@ -209,10 +209,6 @@ module sonic-vlan {
 				leaf mac {
 					type yang:mac-address;
 				}
-
-				
-				
-
 			}
 			/* end of VLAN_LIST */
 		}
@@ -244,24 +240,19 @@ module sonic-vlan {
 						type leafref {
 							path "/port:sonic-port/port:PORT/port:PORT_LIST/port:name";
 
-							/* This condition must be fullfil for Vlan membership */
-					        must "(../mode= 'access' or ../mode = 'trunk')"
-					        {
-						       error-message "VLAN member assignment is only allowed when port is in access or trunk mode";
-					        }
 						}
 						type leafref {
 							path "/lag:sonic-portchannel/lag:PORTCHANNEL/lag:PORTCHANNEL_LIST/lag:name";
-							 /* This condition must be fullfil for Vlan membership */
-					        must "(../mode= 'access' or ../mode = 'trunk')"
-					        {
-						       error-message "VLAN member assignment is only allowed when port is in access or trunk mode";
-					        }
+							
 						}
 					}
-
-					  
+				     
 				}
+				/* This condition must be fullfil for Vlan membership */
+				must "(../mode = 'access' or ../mode ='trunk')"
+					{
+					    error-message "VLAN member assignment is only allowed when port is in access or trunk mode";
+					}
 
 				leaf tagging_mode {
 					mandatory true;
