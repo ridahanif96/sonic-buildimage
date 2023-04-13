@@ -228,12 +228,6 @@ module sonic-vlan {
 					}
 				}
 
-				leaf mode {
-                   description "Port & PortChannel SwitchPort Mode possible values are routed|access|trunk. Default value is routed.";
-                   type stypes:switchport_mode;
-                   default "routed";
-                }
-
 				leaf port {
 					/* key elements are mandatory by default */
 					type union {
@@ -248,11 +242,7 @@ module sonic-vlan {
 					}
 				     
 				}
-				/* This condition must be fullfil for Vlan membership */
-				must "(../mode = 'access' or ../mode ='trunk')"
-					{
-					    error-message "VLAN member assignment is only allowed when port is in access or trunk mode";
-					}
+				
 
 				leaf tagging_mode {
 					mandatory true;

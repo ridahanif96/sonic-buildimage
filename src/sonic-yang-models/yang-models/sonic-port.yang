@@ -57,6 +57,12 @@ module sonic-port{
 					type stypes:switchport_mode; 
 					default "routed";
 				}
+				/* This condition must be fullfil for Vlan membership */
+				
+				must "(mode = 'access' or mode ='trunk')"
+					{
+					    error-message "VLAN member assignment is only allowed when port is in access or trunk mode";
+					}
 
 				leaf description {
 					type string {
