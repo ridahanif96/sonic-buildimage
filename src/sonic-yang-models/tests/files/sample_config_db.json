@@ -533,7 +533,8 @@
                 "macsec": "test",
                 "link_training": "off",
                 "laser_freq": "191600",
-                "tx_power": "-26.6"
+                "tx_power": "-26.6",
+                "mode": "access"
             },
             "Ethernet1": {
                 "alias": "Eth1/2",
@@ -547,7 +548,9 @@
                 "adv_interface_types": "CR,CR4",
                 "link_training": "on",
                 "laser_freq": "191300",
-                "tx_power": "-27.3"
+                "tx_power": "-27.3",
+                "mode": "trunk"
+
             },
             "Ethernet2": {
                 "alias": "Eth1/3",
@@ -559,7 +562,9 @@
                 "autoneg": "on",
                 "adv_speeds": "all",
                 "adv_interface_types": "all",
-                "subport" : "0"
+                "subport" : "0",
+                "mode": "access"
+
             },
             "Ethernet3": {
                 "alias": "Eth1/4",
@@ -568,7 +573,8 @@
                 "speed": "11100",
                 "tpid": "0x88A8",
                 "admin_status": "up",
-                "subport": "1"
+                "subport": "1",
+                "mode": "access"
             },
             "Ethernet4": {
                 "alias": "Eth2/1",
@@ -577,7 +583,8 @@
                 "speed": "11100",
                 "tpid": "0x9100",
                 "admin_status": "up",
-                "subport": "2"
+                "subport": "2",
+                "mode": "access"
             },
             "Ethernet5": {
                 "alias": "Eth2/2",
@@ -586,7 +593,8 @@
                 "speed": "11100",
                 "tpid": "0x9200",
                 "admin_status": "up",
-                "subport": "3"
+                "subport": "3",
+                "mode": "access"
             },
             "Ethernet6": {
                 "alias": "Eth2/3",
@@ -595,7 +603,8 @@
                 "speed": "11100",
                 "tpid": "0x8100",
                 "admin_status": "up",
-                "subport": "4"
+                "subport": "4",
+                "mode": "access"
             },
             "Ethernet7": {
                 "alias": "Eth2/4",
@@ -604,7 +613,8 @@
                 "speed": "11100",
                 "tpid": "0x8100",
                 "admin_status": "up",
-                "subport": "5"
+                "subport": "5",
+                "mode": "access"
             },
             "Ethernet8": {
                 "alias": "Eth3/1",
@@ -613,7 +623,8 @@
                 "speed": "11100",
                 "tpid": "0x8100",
                 "admin_status": "up",
-                "subport": "6"
+                "subport": "6",
+                "mode": "trunk"
             },
             "Ethernet9": {
                 "alias": "Eth3/2",
@@ -622,7 +633,8 @@
                 "speed": "11100",
                 "tpid": "0x8100",
                 "admin_status": "up",
-                "subport": "7"
+                "subport": "7",
+                "mode": "trunk"
             },
             "Ethernet10": {
                 "alias": "Eth3/3",
@@ -631,7 +643,8 @@
                 "speed": "11100",
                 "tpid": "0x8100",
                 "admin_status": "up",
-                "subport": "8"
+                "subport": "8",
+                "mode": "access"
             },
             "Ethernet11": {
                 "alias": "Eth3/4",

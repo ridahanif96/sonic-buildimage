@@ -233,17 +233,22 @@ module sonic-vlan {
 					type union {
 						type leafref {
 							path "/port:sonic-port/port:PORT/port:PORT_LIST/port:name";
+							path "/port:sonic-port/port:PORT/port:PORT_LIST/port:mode";
 
 						}
 						type leafref {
 							path "/lag:sonic-portchannel/lag:PORTCHANNEL/lag:PORTCHANNEL_LIST/lag:name";
-							
+                            path "/lag:sonic-portchannel/lag:PORTCHANNEL/lag:PORTCHANNEL_LIST/lag:mode";
+
 						}
+					
 					}
-				     
+				  must "(../sonic-port:mode = 'access' or ../sonic-port:mode = 'trunk')"
+					{
+					    error-message "VLAN member assignment is only allowed when port is in access or trunk mode";
+					}   
 				}
 				
-
 				leaf tagging_mode {
 					mandatory true;
 					type stypes:vlan_tagging_mode;
