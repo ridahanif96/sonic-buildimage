@@ -151,6 +151,8 @@ module sonic-vlan {
 						(contains(../ip-prefix, '.') and current()='IPv4')";
 					type stypes:ip-family;
 				}
+
+				
 			}
 			/* end of VLAN_INTERFACE_LIST */
 		}
@@ -249,8 +251,10 @@ module sonic-vlan {
 						}
 					
 					}
-
-					 must "current()/../mode = 'access' or current()/../mode = 'trunk'" { error-message "VLAN member assignment is only allowed when port is in access or trunk mode"; }
+					must "(contains(/../mode, ':') and current()='access') or
+						(contains(/../mode, ':') and current()='trunk')";
+					
+					 { error-message "VLAN member assignment is only allowed when port is in access or trunk mode"; }
                     
                 }
 				
