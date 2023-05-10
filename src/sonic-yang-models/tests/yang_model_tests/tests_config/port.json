@@ -13,7 +13,8 @@
                         "pfc_asym": "off",
                         "name": "Ethernet8",
                         "tpid": "0x8100",
-                        "speed": 25000
+                        "speed": 25000,
+                        "mode":"trunk"
                     }
                 ]
             }
@@ -34,7 +35,7 @@
                         "name": "Ethernet8",
                         "tpid": "0x8100",
                         "speed": 25000,
-                        "mode":"access"
+                        "mode":"trunk"
                     }
                 ]
             }

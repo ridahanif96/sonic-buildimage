@@ -56,8 +56,7 @@
                             "10.186.72.566"
                         ],
                         "mtu": "9216",
-                        "name": "Vlan100",
-                        "mode":"trunk"
+                        "name": "Vlan100"
                     }
                 ]
             }
@@ -74,8 +73,7 @@
                             "2001:1:2"
                         ],
                         "mtu": "9216",
-                        "name": "Vlan500",
-                        "mode":"trunk"
+                        "name": "Vlan500"
                     }
                 ]
             }
@@ -207,8 +205,7 @@
                 "VLAN_LIST": [
                     {
                         "description": "server_vlan",
-                        "name": "Vlan100",
-                        "mode":"trunk"
+                        "name": "Vlan100"
                     }
                 ]
             },
@@ -239,8 +236,7 @@
             "sonic-vlan:VLAN": {
                 "VLAN_LIST": [
                     {
-                        "name": "Vlan200",
-                        "mode":"trunk"
+                        "name": "Vlan200"
                     }
                 ]
             },
@@ -312,8 +308,7 @@
 			"10.186.72.56"
 		    ],
 		    "mtu": "9100",
-		    "admin_status": "up",
-            "mode":"trunk"
+		    "admin_status": "up"
 		}]
 	    }
 	}
@@ -340,8 +335,7 @@
                 "VLAN_LIST": [
                     {
                         "description": "vlan_nat",
-                        "name": "Vlan100",
-                        "mode":"trunk"
+                        "name": "Vlan100"
                     }
                 ]
             },
@@ -394,8 +388,7 @@
                 "VLAN_LIST": [
                     {
                         "description": "vlan_nat",
-                        "name": "Vlan100",
-                        "mode":"trunk"
+                        "name": "Vlan100"
                     }
                 ]
             },
@@ -453,8 +446,7 @@
                             "10.186.72.10"
                         ],
                         "mtu": "9216",
-                        "name": "Vlan300",
-                        "mode":"trunk"
+                        "name": "Vlan300"
                     }
                 ]
             },
@@ -511,8 +503,7 @@
                             "2001:1::2"
                         ],
                         "mtu": "9216",
-                        "name": "Vlan400",
-                        "mode":"trunk"
+                        "name": "Vlan400"
                     }
                 ]
             },

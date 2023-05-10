@@ -534,7 +534,7 @@
                 "link_training": "off",
                 "laser_freq": "191600",
                 "tx_power": "-26.6",
-                "mode": "access"
+                "mode": "trunk"
             },
             "Ethernet1": {
                 "alias": "Eth1/2",
@@ -563,7 +563,7 @@
                 "adv_speeds": "all",
                 "adv_interface_types": "all",
                 "subport" : "0",
-                "mode": "access"
+                "mode": "trunk"
 
             },
             "Ethernet3": {
@@ -574,7 +574,7 @@
                 "tpid": "0x88A8",
                 "admin_status": "up",
                 "subport": "1",
-                "mode": "access"
+                "mode": "trunk"
             },
             "Ethernet4": {
                 "alias": "Eth2/1",
@@ -584,7 +584,7 @@
                 "tpid": "0x9100",
                 "admin_status": "up",
                 "subport": "2",
-                "mode": "access"
+                "mode": "trunk"
             },
             "Ethernet5": {
                 "alias": "Eth2/2",
@@ -594,7 +594,7 @@
                 "tpid": "0x9200",
                 "admin_status": "up",
                 "subport": "3",
-                "mode": "access"
+                "mode": "trunk"
             },
             "Ethernet6": {
                 "alias": "Eth2/3",
@@ -604,7 +604,7 @@
                 "tpid": "0x8100",
                 "admin_status": "up",
                 "subport": "4",
-                "mode": "access"
+                "mode": "trunk"
             },
             "Ethernet7": {
                 "alias": "Eth2/4",
@@ -614,7 +614,7 @@
                 "tpid": "0x8100",
                 "admin_status": "up",
                 "subport": "5",
-                "mode": "access"
+                "mode": "trunk"
             },
             "Ethernet8": {
                 "alias": "Eth3/1",
@@ -644,7 +644,7 @@
                 "tpid": "0x8100",
                 "admin_status": "up",
                 "subport": "8",
-                "mode": "access"
+                "mode": "trunk"
             },
             "Ethernet11": {
                 "alias": "Eth3/4",

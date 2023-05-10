@@ -253,10 +253,15 @@ module sonic-vlan {
 						}
 					
 					}
-					must "(contains(../mode, ':') and current()='access') or (contains(../mode, ':') and current()='trunk')";
-					
-					       error-message "VLAN member assignment is only allowed when port is in access or trunk mode"; 
-                    
+					must "(/port:sonic-port/port:PORT/port:PORT_LIST[port:mode=current()]/port:mode = 'access' 
+				          or /port:sonic-port/port:PORT/port:PORT_LIST[port:mode=current()]/port:mode = 'trunk'
+				          or /lag:sonic-portchannel/lag:PORTCHANNEL/lag:PORTCHANNEL_LIST[lag:mode=current()]/lag:mode = 'access'
+				          or /lag:sonic-portchannel/lag:PORTCHANNEL/lag:PORTCHANNEL_LIST[lag:mode=current()]/lag:mode = 'trunk')"
+
+					    {
+					       error-message "VLAN member assignment is allowed only if port is in access or trunk mode.";
+
+					    }
                 }
 				
 				     
