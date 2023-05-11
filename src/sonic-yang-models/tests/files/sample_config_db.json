@@ -539,7 +539,8 @@
                 "macsec": "test",
                 "link_training": "off",
                 "laser_freq": "191600",
-                "tx_power": "-26.6"
+                "tx_power": "-26.6",
+                "mode":"trunk"
                 
             },
             "Ethernet1": {
@@ -554,7 +555,8 @@
                 "adv_interface_types": "CR,CR4",
                 "link_training": "on",
                 "laser_freq": "191300",
-                "tx_power": "-27.3"
+                "tx_power": "-27.3",
+                "mode":"trunk"
 
             },
             "Ethernet2": {
@@ -567,7 +569,8 @@
                 "autoneg": "on",
                 "adv_speeds": "all",
                 "adv_interface_types": "all",
-                "subport" : "0"
+                "subport" : "0",
+                "mode":"trunk"
 
             },
             "Ethernet3": {
