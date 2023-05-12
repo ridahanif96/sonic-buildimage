@@ -558,8 +558,7 @@
                         "alias": "etp1a",
                         "lanes": "60, 61",
                         "speed": 100000,
-                        "subport": 1,
-                        "mode":"trunk"
+                        "subport": 1
                         
                     },
                     {
@@ -567,24 +566,21 @@
                         "alias": "etp1b",
                         "lanes": "62, 63",
                         "speed": 100000,
-                        "subport": 2,
-                        "mode":"trunk"
+                        "subport": 2
                     },
                     {
                         "name": "Ethernet4",
                         "alias": "etp1c",
                         "lanes": "64, 65",
                         "speed": 100000,
-                        "subport": 3,
-                        "mode":"trunk"
+                        "subport": 3
                     },
                     {
                         "name": "Ethernet6",
                         "alias": "etp1d",
                         "lanes": "66, 67",
                         "speed": 100000,
-                        "subport": 4,
-                        "mode":"trunk"
+                        "subport": 4
                     }
                 ]
             }
