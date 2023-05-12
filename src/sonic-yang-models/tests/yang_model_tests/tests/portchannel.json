@@ -23,7 +23,7 @@
     "PORT_CHANNEL_INVALID_MODE": {
         "desc": "INCORRECT VALUE OF MODE IN PORT_CHANNEL TABLE.",
         "eStrKey" : "Pattern",
-        "eStr": ["routed|access|trunk"]
+        "eStr": ["trunk|access|routed"]
     },
     
     "PORT_CHANNEL_INVALID_FALLBACK": {

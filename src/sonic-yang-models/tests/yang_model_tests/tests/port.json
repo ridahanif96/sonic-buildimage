@@ -22,7 +22,7 @@
     "PORT_INVLAID_MODE_TEST": {
         "desc": "PORT_INVLAID_MODE_TEST invalid mode failure.",
         "eStrKey" : "Pattern",
-        "eStr": ["routed|access|trunk"]
+        "eStr": ["trunk|access|routed"]
     },
     "PORT_VALID_AUTONEG_TEST_1": {
         "desc": "PORT_VALID_AUTONEG_TEST_1 no failure."
