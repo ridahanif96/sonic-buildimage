@@ -211,7 +211,7 @@ module sonic-types {
 
     typedef switchport_mode {
         type string {
-            pattern "routed|access|trunk";
+            pattern "trunk|access|routed";
         }
         description
             "SwitchPort Modes for Port & PortChannel";
