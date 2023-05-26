@@ -1054,8 +1054,8 @@ class TestCfgGen(TestCase):
                 "'Ethernet120': {'lanes': '16,17,18,19', 'alias': 'Ethernet16/1', 'index': '16', 'role': 'Ext', 'speed': '100000', 'asic_port_name': 'Eth120-ASIC0', 'fec': 'rs', 'description': 'ARISTA17T3:Ethernet1', 'mtu': '9100', 'tpid': '0x8100', 'pfc_asym': 'off', 'admin_status': 'up', 'mode': 'trunk'}, "
                 "'Ethernet128': {'lanes': '8,9,10,11', 'alias': 'Ethernet17/1', 'index': '17', 'role': 'Ext', 'speed': '100000', 'asic_port_name': 'Eth128-ASIC0', 'fec': 'rs', 'description': 'ARISTA18T3:Ethernet1', 'mtu': '9100', 'tpid': '0x8100', 'pfc_asym': 'off', 'admin_status': 'up', 'mode': 'trunk'}, "
                 "'Ethernet136': {'lanes': '0,1,2,3', 'alias': 'Ethernet18/1', 'index': '18', 'role': 'Ext', 'speed': '100000', 'asic_port_name': 'Eth136-ASIC0', 'fec': 'rs', 'description': 'ARISTA18T3:Ethernet2', 'mtu': '9100', 'tpid': '0x8100', 'pfc_asym': 'off', 'admin_status': 'up', 'mode': 'trunk'}, "
-                "'Ethernet-Rec0': {'lanes': '221', 'alias': 'Recirc0/0', 'index': '37', 'role': 'Rec', 'speed': '400000', 'asic_port_name': 'Rcy0-ASIC0', 'description': 'Recirc0/0', 'mtu': '9100', 'tpid': '0x8100', 'pfc_asym': 'off', 'admin_status': 'up'}," 
-                "'Ethernet-IB0': {'lanes': '222', 'alias': 'Recirc0/1', 'index': '38', 'role': 'Inb', 'speed': '400000', 'asic_port_name': 'Rcy1-ASIC0', 'description': 'Recirc0/1', 'mtu': '9100', 'tpid': '0x8100', 'pfc_asym': 'off', 'admin_status': 'up'}}"
+                "'Ethernet-Rec0': {'lanes': '221', 'alias': 'Recirc0/0', 'index': '37', 'role': 'Rec', 'speed': '400000', 'asic_port_name': 'Rcy0-ASIC0', 'description': 'Recirc0/0', 'mtu': '9100', 'tpid': '0x8100', 'pfc_asym': 'off', 'admin_status': 'up', 'mode': 'trunk'}," 
+                "'Ethernet-IB0': {'lanes': '222', 'alias': 'Recirc0/1', 'index': '38', 'role': 'Inb', 'speed': '400000', 'asic_port_name': 'Rcy1-ASIC0', 'description': 'Recirc0/1', 'mtu': '9100', 'tpid': '0x8100', 'pfc_asym': 'off', 'admin_status': 'up', 'mode': 'trunk'}}"
             )
         )
 
