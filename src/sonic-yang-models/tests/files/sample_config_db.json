@@ -89,7 +89,11 @@
                 "tpid": "0x8100",
                 "mtu": "9100",
                 "lacp_key": "auto",
+<<<<<<< HEAD
                 "mode": "trunk"
+=======
+                "mode":"trunk"
+>>>>>>> Switchport_Vlan
             },
             "PortChannel0004": {
                 "admin_status": "up",
@@ -105,7 +109,11 @@
                 "tpid": "0x9200",
                 "mtu": "9100",
                 "lacp_key": "auto",
+<<<<<<< HEAD
                 "mode": "trunk"
+=======
+                "mode":"trunk"
+>>>>>>> Switchport_Vlan
             },
             "PortChannel42": {
                 "admin_status": "up",
@@ -542,7 +550,10 @@
                 "laser_freq": "191600",
                 "tx_power": "-26.6",
                 "mode":"trunk"
+<<<<<<< HEAD
                 
+=======
+>>>>>>> Switchport_Vlan
             },
             "Ethernet1": {
                 "alias": "Eth1/2",
@@ -558,7 +569,10 @@
                 "laser_freq": "191300",
                 "tx_power": "-27.3",
                 "mode":"trunk"
+<<<<<<< HEAD
 
+=======
+>>>>>>> Switchport_Vlan
             },
             "Ethernet2": {
                 "alias": "Eth1/3",
@@ -572,7 +586,10 @@
                 "adv_interface_types": "all",
                 "subport" : "0",
                 "mode":"trunk"
+<<<<<<< HEAD
 
+=======
+>>>>>>> Switchport_Vlan
             },
             "Ethernet3": {
                 "alias": "Eth1/4",
@@ -919,7 +936,8 @@
                 "pfc_asym": "off",
                 "role": "Int",
                 "speed": "40000",
-                "tpid": "0x8100"
+                "tpid": "0x8100",
+                "mode":"trunk"
             },
             "Ethernet-BP4": {
                 "admin_status": "up",
@@ -932,7 +950,8 @@
                 "pfc_asym": "off",
                 "role": "Int",
                 "speed": "40000",
-                "tpid": "0x8100"
+                "tpid": "0x8100",
+                "mode":"trunk"
             }
         },
         "LOGGER": {

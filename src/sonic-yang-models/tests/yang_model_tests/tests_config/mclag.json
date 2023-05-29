@@ -21,7 +21,7 @@
                         "mtu": 9000,
                         "name": "Ethernet10",
                         "speed": 25000,
-                        "mode": "trunk"
+                        "mode":"trunk"
                     }
                 ]
             }
@@ -35,9 +35,7 @@
                         "mtu": "9100",
                         "lacp_key": "auto",
                         "name": "PortChannel2",
-                        "mode": "trunk"
-
-
+                        "mode":"trunk"
                     },
                     {
                         "admin_status": "up",
@@ -45,7 +43,8 @@
                         "mtu": "9100",
                         "lacp_key": "auto",
                         "name": "PortChannel10",
-                        "mode": "trunk"
+                        "mode":"trunk"
+
                     }
                 ]
             }
@@ -133,7 +132,11 @@
                         "mtu": 9000,
                         "name": "Ethernet0",
                         "speed": 25000,
+<<<<<<< HEAD
                         "mode": "trunk"
+=======
+                        "mode":"trunk"
+>>>>>>> Switchport_Vlan
                     },
                     {
                         "admin_status": "up",
@@ -143,7 +146,11 @@
                         "mtu": 9000,
                         "name": "Ethernet4",
                         "speed": 25000,
+<<<<<<< HEAD
                         "mode": "trunk"
+=======
+                        "mode":"trunk"
+>>>>>>> Switchport_Vlan
                     }
                 ]
             }
@@ -157,8 +164,12 @@
                         "mtu": "9100",
                         "lacp_key": "auto",
                         "name": "PortChannel2",
+<<<<<<< HEAD
                         "mode": "trunk"
                         
+=======
+                        "mode":"trunk"
+>>>>>>> Switchport_Vlan
                     }
 
                     
@@ -315,7 +326,11 @@
                         "mtu": 9000,
                         "name": "Ethernet12",
                         "speed": 25000,
+<<<<<<< HEAD
                         "mode": "trunk"
+=======
+                        "mode":"trunk"
+>>>>>>> Switchport_Vlan
                     }
                 ]
             }

@@ -63,6 +63,7 @@ module sonic-portchannel {
                         range 1..1024;
                     }
                 }
+<<<<<<< HEAD
                 
                 leaf mode {
 					description "SwitchPort Modes possible values are trunk|access|routed. Default value is routed."; 
@@ -71,6 +72,16 @@ module sonic-portchannel {
 				}
                 
                 
+=======
+               
+               leaf mode {
+                   description "PortChannel SwitchPort Mode possible values are routed|access|trunk. Default value is routed.";
+                   type stypes:switchport_mode;
+                   default "routed";
+
+                }
+
+>>>>>>> Switchport_Vlan
                 leaf description {
                     type string {
                         length 1..255;

@@ -89,7 +89,8 @@
                         "description": "Ethernet0",
                         "mtu": 9000,
                         "name": "Ethernet0",
-                        "speed": 25000
+                        "speed": 25000,
+                        "mode":"trunk"
                     }
                 ]
             }
@@ -146,7 +147,8 @@
                         "description": "Ethernet0",
                         "mtu": 9000,
                         "name": "Ethernet0",
-                        "speed": 25000
+                        "speed": 25000,
+                        "mode":"trunk"
                     }
                 ]
             }
@@ -186,7 +188,7 @@
                         "mtu": 9000,
                         "name": "Ethernet0",
                         "speed": 25000,
-                        "mode": "trunk"
+                        "mode":"trunk"
                     },
                     {
                         "admin_status": "up",
@@ -195,7 +197,7 @@
                         "mtu": 9000,
                         "name": "Ethernet1",
                         "speed": 25000,
-                        "mode": "trunk"
+                        "mode":"trunk"
                     }
                 ]
             }
@@ -227,7 +229,7 @@
                     {
                         "admin_status": "up",
                         "name": "PortChannel5",
-                        "mode": "trunk"
+                        "mode":"trunk"
                     }
                 ]
             }
@@ -325,7 +327,7 @@
                         "lanes": "1",
                         "name": "Ethernet0",
                         "speed": 25000,
-                        "mode": "trunk"
+                        "mode":"trunk"
                     }
                 ]
             }
@@ -378,7 +380,7 @@
                         "lanes": "1",
                         "name": "Ethernet0",
                         "speed": 25000,
-                        "mode": "trunk"
+                        "mode":"trunk"
                     }
                 ]
             }
@@ -431,7 +433,7 @@
                         "lanes": "1",
                         "name": "Ethernet0",
                         "speed": 25000,
-                        "mode": "trunk"
+                        "mode":"trunk"
                     }
                 ]
             }
@@ -488,7 +490,7 @@
                         "lanes": "1",
                         "name": "Ethernet0",
                         "speed": 25000,
-                        "mode": "trunk"
+                        "mode":"trunk"
                     }
                 ]
             }

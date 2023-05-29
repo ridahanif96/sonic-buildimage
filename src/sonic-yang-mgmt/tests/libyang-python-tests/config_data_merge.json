@@ -99,6 +99,7 @@
 					"speed": 25000,
 					"mtu": 9000,
 					"admin_status": "up"
+
 				},
 				{
 					"port_name": "Ethernet5",
@@ -107,6 +108,7 @@
 					"speed": 25000,
 					"mtu": 9000,
 					"admin_status": "up"
+
 				},
 				{
 					"port_name": "Ethernet6",

@@ -88,7 +88,7 @@ class TestCfgGen(object):
         arg = ["--var-json", "PORT"]
         output = json.loads(self.run_script_with_yang_arg(arg))
         assert(output == \
-            {'Ethernet0': {'admin_status': 'up', 'alias': 'eth0', 'description': 'Ethernet0', 'fec': 'rs', 'lanes': '65, 66', 'mtu': '9100', 'pfc_asym': 'on', 'speed': '40000'},
+            {'Ethernet0': {'admin_status': 'up', 'alias': 'eth0', 'description': 'Ethernet0', 'fec': 'rs', 'lanes': '65, 66', 'mtu': '9100', 'pfc_asym': 'on', 'speed': '40000' },
             'Ethernet4': {'admin_status': 'up', 'alias': 'eth4', 'description': 'Ethernet4', 'fec': 'rs', 'lanes': '67, 68', 'mtu': '9100', 'pfc_asym': 'on', 'speed': '40000'},
             'Ethernet8': {'admin_status': 'up', 'alias': 'eth8', 'description': 'Ethernet8', 'fec': 'rs', 'lanes': '69, 70', 'mtu': '9100', 'pfc_asym': 'on', 'speed': '40000'},
             'Ethernet12': {'admin_status': 'up', 'alias': 'eth12', 'description': 'Ethernet12', 'fec': 'rs', 'lanes': '71, 72', 'mtu': '9100', 'pfc_asym': 'on', 'speed': '40000'},

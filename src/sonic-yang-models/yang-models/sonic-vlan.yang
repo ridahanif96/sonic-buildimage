@@ -130,6 +130,7 @@ module sonic-vlan {
 					type leafref {
 						path "/vlan:sonic-vlan/vlan:VLAN/vlan:VLAN_LIST/vlan:name";
 					}
+
 				}
 
 				leaf ip-prefix {
@@ -185,6 +186,7 @@ module sonic-vlan {
 					}
 				}
 
+
 				leaf alias {
 					type string;
 				}
@@ -194,7 +196,7 @@ module sonic-vlan {
 						length 1..255;
 					}
 				}
-
+               
 				leaf-list dhcp_servers {
 					description "Configure the dhcp v4 servers";
 					type inet:ip-address;
@@ -204,6 +206,7 @@ module sonic-vlan {
 					description "Configure the dhcp v6 servers";
 					type inet:ipv6-address;
 				}
+                
 
 				leaf mtu {
 					type uint16 {
@@ -218,8 +221,13 @@ module sonic-vlan {
 				leaf mac {
 					type yang:mac-address;
 				}
+<<<<<<< HEAD
 
 				
+=======
+				
+
+>>>>>>> Switchport_Vlan
 			}
 			/* end of VLAN_LIST */
 		}
@@ -239,7 +247,10 @@ module sonic-vlan {
 						path "/vlan:sonic-vlan/vlan:VLAN/vlan:VLAN_LIST/vlan:name";
 					}
 				}
+             
+			
 
+<<<<<<< HEAD
 				leaf mode {
 					description "SwitchPort Modes possible values are routed|access|trunk. Default value is routed."; 
 					type stypes:switchport_mode; 
@@ -247,10 +258,16 @@ module sonic-vlan {
 				}
 
 				leaf port {
+=======
+				leaf port 
+				{
+>>>>>>> Switchport_Vlan
 					/* key elements are mandatory by default */
 					type union {
-						type leafref {
+						type leafref 
+						{
 							path "/port:sonic-port/port:PORT/port:PORT_LIST/port:name";
+<<<<<<< HEAD
 
 						}
 						
@@ -272,10 +289,38 @@ module sonic-vlan {
                 }
 				
 				     
+=======
+							
+
+						}
+						type leafref
+						{
+							path "/lag:sonic-portchannel/lag:PORTCHANNEL/lag:PORTCHANNEL_LIST/lag:name";
+                            
+					
+						}
+					}
+
+                    
+					must "(/port:sonic-port/port:PORT/port:PORT_LIST[port:name=current()]/port:mode = 'access' 
+				         or /port:sonic-port/port:PORT/port:PORT_LIST[port:name=current()]/port:mode = 'trunk'
+				         or /lag:sonic-portchannel/lag:PORTCHANNEL/lag:PORTCHANNEL_LIST[lag:name=current()]/lag:mode = 'access'
+				         or /lag:sonic-portchannel/lag:PORTCHANNEL/lag:PORTCHANNEL_LIST[lag:name=current()]/lag:mode = 'trunk')"
+										
+					   {
+					       error-message "VLAN member assignment is allowed only if port is in access or trunk mode.";
+
+					   }
+				}
+				
+>>>>>>> Switchport_Vlan
 				leaf tagging_mode {
 					mandatory true;
 					type stypes:vlan_tagging_mode;
 				}
+
+				 
+
 			}
             /* end of list VLAN_MEMBER_LIST */
 		}
