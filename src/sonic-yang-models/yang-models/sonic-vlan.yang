@@ -221,13 +221,8 @@ module sonic-vlan {
 				leaf mac {
 					type yang:mac-address;
 				}
-<<<<<<< HEAD
-
-				
-=======
 				
 
->>>>>>> Switchport_Vlan
 			}
 			/* end of VLAN_LIST */
 		}
@@ -250,46 +245,13 @@ module sonic-vlan {
              
 			
 
-<<<<<<< HEAD
-				leaf mode {
-					description "SwitchPort Modes possible values are routed|access|trunk. Default value is routed."; 
-					type stypes:switchport_mode; 
-					default "routed";
-				}
-
-				leaf port {
-=======
 				leaf port 
 				{
->>>>>>> Switchport_Vlan
 					/* key elements are mandatory by default */
 					type union {
 						type leafref 
 						{
 							path "/port:sonic-port/port:PORT/port:PORT_LIST/port:name";
-<<<<<<< HEAD
-
-						}
-						
-						type leafref {
-							path "/lag:sonic-portchannel/lag:PORTCHANNEL/lag:PORTCHANNEL_LIST/lag:name";
-
-						}
-					
-					}
-					must "(/port:sonic-port/port:PORT/port:PORT_LIST[port:name=current()]/port:mode = 'access' 
-				          or /port:sonic-port/port:PORT/port:PORT_LIST[port:name=current()]/port:mode = 'trunk'
-				          or /lag:sonic-portchannel/lag:PORTCHANNEL/lag:PORTCHANNEL_LIST[lag:name=current()]/lag:mode = 'access'
-				          or /lag:sonic-portchannel/lag:PORTCHANNEL/lag:PORTCHANNEL_LIST[lag:name=current()]/lag:mode = 'trunk')"
-
-					    {
-					       error-message "VLAN member assignment is allowed only if port is in access or trunk mode.";
-
-					    }
-                }
-				
-				     
-=======
 							
 
 						}
@@ -313,7 +275,6 @@ module sonic-vlan {
 					   }
 				}
 				
->>>>>>> Switchport_Vlan
 				leaf tagging_mode {
 					mandatory true;
 					type stypes:vlan_tagging_mode;

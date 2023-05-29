@@ -58,16 +58,6 @@ module sonic-port{
 					default "routed";
 				}
 
-				leaf mode {
-					description "SwitchPort Modes possible values are routed|access|trunk. Default value is routed."; 
-					type stypes:switchport_mode; 
-					default "trunk";
-					
-					
-
-				}
-				
-
 				leaf description {
 					type string {
 						length 0..255;
