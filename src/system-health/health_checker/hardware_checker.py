@@ -15,7 +15,7 @@ class HardwareChecker(HealthChecker):
 
     def __init__(self):
         HealthChecker.__init__(self)
-        self._db = SonicV2Connector(host="127.0.0.1")
+        self._db = SonicV2Connector(use_unix_socket_path=True)
         self._db.connect(self._db.STATE_DB)
 
     def get_category(self):
@@ -257,12 +257,13 @@ class HardwareChecker(HealthChecker):
             if not self._ignore_check(config.ignore_devices, 'psu', name, 'power_threshold'):
                 power_overload = data_dict.get('power_overload', None)
                 if power_overload == 'True':
+
                     try:
                         power = data_dict['power']
                         power_critical_threshold = data_dict['power_critical_threshold']
-                        self.set_object_not_ok('PSU', name, 'power of {} ({}w) exceeds threshold ({}w)'.format(name, power, power_critical_threshold))
+                        self.set_object_not_ok('PSU', name, 'System power exceeds threshold ({}w)'.format(power_critical_threshold))
                     except KeyError:
-                        self.set_object_not_ok('PSU', name, 'power of {} exceeds threshold but power or power_critical_threshold is invalid'.format(name))
+                        self.set_object_not_ok('PSU', name, 'System power exceeds threshold but power_critical_threshold is invalid')
                     continue
 
             self.set_object_ok('PSU', name)

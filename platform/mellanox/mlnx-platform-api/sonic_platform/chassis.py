@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2019-2021 NVIDIA CORPORATION & AFFILIATES.
+# Copyright (c) 2019-2023 NVIDIA CORPORATION & AFFILIATES.
 # Apache-2.0
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -128,10 +128,6 @@ class Chassis(ChassisBase):
     def __del__(self):
         if self.sfp_event:
             self.sfp_event.deinitialize()
-
-        if self._sfp_list:
-            if self.sfp_module.SFP.shared_sdk_handle:
-                self.sfp_module.deinitialize_sdk_handle(self.sfp_module.SFP.shared_sdk_handle)
 
     @property
     def RJ45_port_list(self):
@@ -765,7 +761,6 @@ class Chassis(ChassisBase):
             'reset_hotswap_or_halt'     :   self.REBOOT_CAUSE_HARDWARE_OTHER,
             'reset_voltmon_upgrade_fail':   self.REBOOT_CAUSE_HARDWARE_OTHER,
             'reset_reload_bios'         :   self.REBOOT_CAUSE_HARDWARE_BIOS,
-            'reset_from_comex'          :   self.REBOOT_CAUSE_HARDWARE_CPU,
             'reset_fw_reset'            :   self.REBOOT_CAUSE_HARDWARE_RESET_FROM_ASIC,
             'reset_from_asic'           :   self.REBOOT_CAUSE_HARDWARE_RESET_FROM_ASIC,
             'reset_long_pb'             :   self.REBOOT_CAUSE_HARDWARE_BUTTON,
