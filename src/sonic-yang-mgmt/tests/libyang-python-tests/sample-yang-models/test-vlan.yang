@@ -128,6 +128,14 @@ module test-vlan {
 					type leafref {
 						path /port:port/port:PORT/port:PORT_LIST/port:port_name;
 					}
+
+					must "(/port:sonic-port/port:PORT/port:PORT_LIST[port:name=current()]/port:mode = 'access' or 
+					      /port:sonic-port/port:PORT/port:PORT_LIST[port:name=current()]/port:mode = 'trunk')"
+										
+					   {
+					       error-message "VLAN member assignment is allowed only if port is in access or trunk mode.";
+
+					   }
 				
 				}
                     
