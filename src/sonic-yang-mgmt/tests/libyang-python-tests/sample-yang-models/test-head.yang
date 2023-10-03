@@ -21,14 +21,6 @@ module test-head {
         }
     }
 
-    typedef switchport_mode {
-        type string {
-            pattern "routed|access|trunk";
-        }
-        description
-            "SwitchPort Modes for Port & PortChannel";
-    }
-
     typedef packet_action{
         type enumeration {
             enum DROP;

@@ -13,10 +13,6 @@
 
       {
          "valid" : "True",
-         "xpath" : "/test-port:port/PORT/PORT_LIST[port_name='Ethernet4']/alias"
-      },
-      {
-         "valid" : "True",
          "xpath" : "/test-vlan:vlan/VLAN_INTERFACE"
       },
       {
@@ -145,10 +141,6 @@
          "xpath" : "/test-port:port/PORT/PORT_LIST[port_name='Ethernet10']/speed"
       },
       {
-         "value" : "routed",
-         "xpath" : "/test-port:port/PORT/PORT_LIST[port_name='Ethernet4']/mode"
-      },
-      {
          "value" : "IPv6",
          "xpath" : "/test-vlan:vlan/VLAN_INTERFACE/VLAN_INTERFACE_LIST[vlanid='200'][ip-prefix='2000:f500:45:6708::/64']/family"
       }
@@ -189,10 +181,6 @@
          "xpath" : "/test-port:port/PORT/PORT_LIST[port_name='Ethernet12']/speed"
       },
       {
-         "value" : "routed",
-         "xpath" : "/test-port:port/PORT/PORT_LIST[port_name='Ethernet4']/mode"
-      },
-      {
          "value" : "rule_20",
          "xpath" : "/test-acl:acl/ACL_RULE/ACL_RULE_LIST[ACL_TABLE_NAME='PACL-test'][RULE_NAME='rule_20']/RULE_NAME"
       }
@@ -231,10 +219,6 @@
       {
          "parent" : "/test-port:port/PORT/PORT_LIST[port_name='Ethernet9']",
          "xpath" : "/test-port:port/PORT/PORT_LIST[port_name='Ethernet9']/speed"
-      },
-      {
-         "parent" : "/test-port:port/PORT/PORT_LIST[port_name='Ethernet4']",
-         "xpath" : "/test-port:port/PORT/PORT_LIST[port_name='Ethernet4']/mode"
       }
    ],
    "prefix" : [
@@ -288,10 +272,6 @@
       {
          "value" : "10000",
          "xpath" : "/test-port:port/PORT/PORT_LIST[port_name='Ethernet10']/speed"
-      },
-      {
-         "value" : "routed",
-         "xpath" : "/test-port:port/PORT/PORT_LIST[port_name='Ethernet4']/mode"
       },
       {
          "value" : "1500",

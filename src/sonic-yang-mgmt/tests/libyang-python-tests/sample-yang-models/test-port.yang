@@ -69,12 +69,6 @@ module test-port{
 					mandatory true;
 					type head:admin_status;
 				}
-
-				leaf mode {
-					description "SwitchPort Modes possible values are routed|access|trunk. Default value is routed."; 
-					type head:switchport_mode; 
-					default "routed";
-				}
 				
 			} /* end of list PORT_LIST */
 
