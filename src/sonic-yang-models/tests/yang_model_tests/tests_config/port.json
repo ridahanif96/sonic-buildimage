@@ -14,7 +14,7 @@
                         "name": "Ethernet8",
                         "tpid": "0x8100",
                         "speed": 25000,
-                        "mode":"trunk"
+                        "mode":"routed"
                     }
                 ]
             }
@@ -35,7 +35,7 @@
                         "name": "Ethernet8",
                         "tpid": "0x8100",
                         "speed": 25000,
-                        "mode":"trunk"
+                        "mode":"routed"
                     }
                 ]
             }
@@ -51,7 +51,7 @@
                         "lanes": "65",
                         "speed": 25000,
                         "mtu": 68,
-                        "mode":"trunk"
+                        "mode":"routed"
                     }
                 ]
             }
@@ -67,7 +67,7 @@
                         "lanes": "65",
                         "speed": 25000,
                         "mtu": 9216,
-                        "mode":"trunk"
+                        "mode":"routed"
                     }
                 ]
             }
@@ -101,7 +101,7 @@
                         "speed": 25000,
                         "tpid": "0x8100",
                         "autoneg": "on",
-                        "mode":"trunk"
+                        "mode":"routed"
                     }
                 ]
             }
@@ -119,7 +119,7 @@
                         "speed": 25000,
                         "tpid": "0x8100",
                         "autoneg": "off",
-                        "mode":"trunk"
+                        "mode":"routed"
                     }
                 ]
             }
@@ -137,7 +137,7 @@
                         "speed": 25000,
                         "tpid": "0x8100",
                         "autoneg": 0,
-                        "mode":"trunk"
+                        "mode":"routed"
                     }
                 ]
             }
@@ -446,7 +446,7 @@
                         "speed": 25000,
                         "tpid": "0x8100",
                         "link_training": "on",
-                        "mode":"trunk"
+                        "mode":"routed"
                     }
                 ]
             }
@@ -464,7 +464,7 @@
                         "speed": 25000,
                         "tpid": "0x8100",
                         "link_training": "off",
-                        "mode":"trunk"
+                        "mode":"routed"
                     }
                 ]
             }
@@ -554,7 +554,7 @@
                          "lanes": "60, 61",
                          "speed": 100000,
                          "subport": 9,
-                         "mode":"trunk"
+                         "mode":"routed"
                      }
                  ]
              }
@@ -571,7 +571,7 @@
                         "lanes": "60, 61",
                         "speed": 100000,
                         "subport": 1,
-                        "mode":"trunk"
+                        "mode":"routed"
                     },
                     {
                        "name": "Ethernet2",
@@ -579,7 +579,7 @@
                         "lanes": "62, 63",
                         "speed": 100000,
                         "subport": 2,
-                        "mode":"trunk"
+                        "mode":"routed"
                     },
                     {
                         "name": "Ethernet4",
@@ -587,7 +587,7 @@
                         "lanes": "64, 65",
                         "speed": 100000,
                         "subport": 3,
-                        "mode":"trunk"
+                        "mode":"routed"
 
                     },
                     {
@@ -596,7 +596,7 @@
                         "lanes": "66, 67",
                         "speed": 100000,
                         "subport": 4,
-                        "mode":"trunk"
+                        "mode":"routed"
                     }
                 ]
             }

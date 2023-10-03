@@ -10,7 +10,6 @@
          "valid" : "False",
          "xpath" : "/test-port:port/PORT/PORT_LIST[port_name='Ethernet20']/alias"
       },
-
       {
          "valid" : "True",
          "xpath" : "/test-vlan:vlan/VLAN_INTERFACE"

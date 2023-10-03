@@ -11,7 +11,7 @@
                         "mtu": 9000,
                         "name": "Ethernet0",
                         "speed": 25000,
-                        "mode": "trunk"
+                        "mode": "routed"
                     },
                     {
                         "admin_status": "up",
@@ -21,7 +21,7 @@
                         "mtu": 9000,
                         "name": "Ethernet10",
                         "speed": 25000,
-                        "mode":"trunk"
+                        "mode":"routed"
                     }
                 ]
             }
@@ -35,7 +35,7 @@
                         "mtu": "9100",
                         "lacp_key": "auto",
                         "name": "PortChannel2",
-                        "mode":"trunk"
+                        "mode":"routed"
                     },
                     {
                         "admin_status": "up",
@@ -43,7 +43,7 @@
                         "mtu": "9100",
                         "lacp_key": "auto",
                         "name": "PortChannel10",
-                        "mode":"trunk"
+                        "mode":"routed"
 
                     }
                 ]
@@ -132,7 +132,7 @@
                         "mtu": 9000,
                         "name": "Ethernet0",
                         "speed": 25000,
-                        "mode":"trunk"
+                        "mode":"routed"
                     },
                     {
                         "admin_status": "up",
@@ -142,7 +142,7 @@
                         "mtu": 9000,
                         "name": "Ethernet4",
                         "speed": 25000,
-                        "mode":"trunk"
+                        "mode":"routed"
                     }
                 ]
             }
@@ -156,7 +156,7 @@
                         "mtu": "9100",
                         "lacp_key": "auto",
                         "name": "PortChannel2",
-                        "mode":"trunk"
+                        "mode":"routed"
                     }
 
                     
@@ -313,7 +313,7 @@
                         "mtu": 9000,
                         "name": "Ethernet12",
                         "speed": 25000,
-                        "mode":"trunk"
+                        "mode":"routed"
                     }
                 ]
             }
