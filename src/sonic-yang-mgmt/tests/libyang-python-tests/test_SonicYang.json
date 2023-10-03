@@ -10,6 +10,11 @@
          "valid" : "False",
          "xpath" : "/test-port:port/PORT/PORT_LIST[port_name='Ethernet20']/alias"
       },
+
+      {
+         "valid" : "True",
+         "xpath" : "/test-port:port/PORT/PORT_LIST[port_name='Ethernet4']/alias"
+      },
       {
          "valid" : "True",
          "xpath" : "/test-vlan:vlan/VLAN_INTERFACE"
@@ -285,7 +290,7 @@
          "xpath" : "/test-port:port/PORT/PORT_LIST[port_name='Ethernet10']/speed"
       },
       {
-         "value" : "trunk",
+         "value" : "routed",
          "xpath" : "/test-port:port/PORT/PORT_LIST[port_name='Ethernet4']/mode"
       },
       {
