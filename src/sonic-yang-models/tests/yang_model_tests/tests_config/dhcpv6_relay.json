@@ -79,8 +79,7 @@
                         ],
                         "rfc6939_support": "true",
                         "name": "Vlan400",
-                        "interface_id": "true",
-                        "name": "Vlan400"
+                        "interface_id": "true"
                     }
                 ]
             }

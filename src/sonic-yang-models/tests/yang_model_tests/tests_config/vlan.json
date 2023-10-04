@@ -229,7 +229,7 @@
                     {
                         "admin_status": "up",
                         "name": "PortChannel5",
-                        "mode":"routed"
+                        "mode":"trunk"
                     }
                 ]
             }
@@ -380,7 +380,7 @@
                         "lanes": "1",
                         "name": "Ethernet0",
                         "speed": 25000,
-                        "mode":"routed"
+                        "mode":"trunk"
                     }
                 ]
             }
@@ -433,7 +433,7 @@
                         "lanes": "1",
                         "name": "Ethernet0",
                         "speed": 25000,
-                        "mode":"routed"
+                        "mode":"trunk"
                     }
                 ]
             }
@@ -490,7 +490,7 @@
                         "lanes": "1",
                         "name": "Ethernet0",
                         "speed": 25000,
-                        "mode":"routed"
+                        "mode":"trunk"
                     }
                 ]
             }
@@ -649,7 +649,7 @@
                         "lanes": "1",
                         "name": "Ethernet0",
                         "speed": 25000,
-                        "mode":"routed"
+                        "mode":"trunk"
                     }
                 ]
             }

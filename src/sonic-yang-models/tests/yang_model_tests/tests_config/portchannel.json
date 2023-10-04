@@ -473,7 +473,7 @@
                         "mtu": 9000,
                         "name": "Ethernet0",
                         "speed": 25000,
-                        "mode": "routed"
+                        "mode": "trunk"
                     }
                 ]
             }
