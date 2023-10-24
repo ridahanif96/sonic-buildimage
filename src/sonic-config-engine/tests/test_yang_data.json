@@ -11,7 +11,8 @@
                     "mtu": 9100,
                     "pfc_asym": "on",
                     "name": "Ethernet0",
-                    "speed": 40000
+                    "speed": 40000,
+                    "mode": "routed"
                 },
                 {
                     "admin_status": "up",
@@ -22,7 +23,8 @@
                     "mtu": 9100,
                     "pfc_asym": "on",
                     "name": "Ethernet4",
-                    "speed": 40000
+                    "speed": 40000,
+                    "mode" : "trunk"
                 },
                 {
                     "admin_status": "up",
@@ -33,7 +35,8 @@
                     "mtu": 9100,
                     "pfc_asym": "on",
                     "name": "Ethernet8",
-                    "speed": 40000
+                    "speed": 40000,
+                    "mode" : "trunk"
                 },
                 {
                     "admin_status": "up",
