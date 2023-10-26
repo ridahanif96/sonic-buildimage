@@ -47,7 +47,8 @@
                     "mtu": 9100,
                     "pfc_asym": "on",
                     "name": "Ethernet12",
-                    "speed": 40000
+                    "speed": 40000,
+                    "mode" : "routed"
                 },
                 {
                     "admin_status": "up",
@@ -58,7 +59,8 @@
                     "mtu": 9100,
                     "pfc_asym": "on",
                     "name": "Ethernet16",
-                    "speed": 40000
+                    "speed": 40000,
+                    "mode" : "routed"
                 },
                 {
                     "admin_status": "up",
@@ -69,7 +71,8 @@
                     "mtu": 9100,
                     "pfc_asym": "on",
                     "name": "Ethernet20",
-                    "speed": 40000
+                    "speed": 40000,
+                    "mode" : "routed"
                 },
                 {
                     "admin_status": "up",
@@ -80,7 +83,8 @@
                     "mtu": 9100,
                     "pfc_asym": "on",
                     "name": "Ethernet24",
-                    "speed": 40000
+                    "speed": 40000,
+                    "mode" : "routed"
                 },
                 {
                     "admin_status": "up",
@@ -91,7 +95,8 @@
                     "mtu": 9100,
                     "pfc_asym": "on",
                     "name": "Ethernet28",
-                    "speed": 40000
+                    "speed": 40000,
+                    "mode" : "routed"
                 }
             ]
         }
