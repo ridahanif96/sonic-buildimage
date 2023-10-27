@@ -24,7 +24,7 @@
                     "pfc_asym": "on",
                     "name": "Ethernet4",
                     "speed": 40000,
-                    "mode" : "routed"
+                    "mode" : "trunk"
                 },
                 {
                     "admin_status": "up",
@@ -36,7 +36,7 @@
                     "pfc_asym": "on",
                     "name": "Ethernet8",
                     "speed": 40000,
-                    "mode" : "routed"
+                    "mode" : "trunk"
                 },
                 {
                     "admin_status": "up",
