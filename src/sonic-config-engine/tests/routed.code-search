@@ -1,0 +1,559 @@
+# Query: routed
+# ContextLines: 1
+
+147 results - 27 files
+
+platform/broadcom/sonic-platform-modules-dell/common/dell_fpga_ocores.c:
+  1307  	/* on platforms with buggy ACPI, pdev->msi_enabled may be set to
+  1308: 	* allow pci_enable_device to work. This indicates INTx was not routed
+  1309  	* and only MSI should be used
+
+platform/mellanox/docker-syncd-mlnx/ecmp_calculator/ecmp_calc.py:
+  506      try:
+  507:         parser = argparse.ArgumentParser(description="Calculate egress interface for the given packet being routed over ECMP",
+  508                                           usage="/usr/bin/ecmp_calc.py -i <ingress interface> -p <path to json>")
+
+platform/mellanox/docker-syncd-mlnx/ecmp_calculator/README.md:
+  10  1.  ECMP calculator performs its calculations based on the current operational state of the router. In order to calculate the egress port, it fetches routes from HW. Routes exist in HW only for next hops with a resolved ARP.
+  11: 2.  ECMP calculator supports only routed packets.
+  12  -   IPv4/IPv6 TCP/UDP packets
+
+platform/mellanox/non-upstream-patches/patches/0218-UBUNTU-SAUCE-platform-mellanox-Add-mlx-trio-driver.patch:
+  874  +		/*
+  875: +		 * When 1, packets sent on the NDN will be routed x-first.
+  876: +		 * When 0, packets will be routed y-first.  This setting must
+  877  +		 * match the setting in the Tiles.  Devices may have
+
+  882  +		/*
+  883: +		 * When 1, packets sent on the CDN will be routed x-first.
+  884: +		 * When 0, packets will be routed y-first.  This setting must
+  885  +		 * match the setting in the Tiles.  Devices may have
+
+  890  +		/*
+  891: +		 * When 1, packets sent on the DDN will be routed x-first.
+  892: +		 * When 0, packets will be routed y-first.  This setting must
+  893  +		 * match the setting in the Tiles.  Devices may have
+
+platform/nephos/nephos-modules/modules/src/inc/hal_tau_pkt_knl.h:
+  481      UI32_T  mc_decr_ttl                   : 1;
+  482:     UI32_T  mc_is_routed                  : 1;
+  483      UI32_T  mc_mel_vld                    : 1;
+
+  744      UI32_T  mc_mel_vld                    : 1;
+  745:     UI32_T  mc_is_routed                  : 1;
+  746      UI32_T  mc_decr_ttl                   : 1;
+
+src/sonic-config-engine/minigraph.py:
+  1844  
+  1845:     # set default port MTU as 9100 and default TPID 0x8100 and default mode routed
+  1846      for port in ports.values():
+
+  1848          port['tpid'] = '0x8100'
+  1849:         port['mode'] = 'routed'
+  1850  
+
+  1881  
+  1882:     # bring up the recirc port for voq chassis, Set it as routed interface
+  1883      for port, port_attributes in ports.items():
+
+  1887  
+  1888:             #Add the Recirc ports to the INTERFACES table to make it routed intf
+  1889              results['INTERFACE'].update({port : {}})
+
+  1915  
+  1916:     # set default port channel MTU as 9100 and admin status up and default TPID 0x8100 and mode default routed
+  1917      for pc in pcs.values():
+
+  1919          pc['tpid'] = '0x8100'
+  1920:         pc['mode'] = 'routed'
+  1921          pc['admin_status'] = 'up'
+
+src/sonic-config-engine/tests/test_cfggen_from_yang.py:
+  89          assert(output == \
+  90          assert(output == \
+  91:             {'Ethernet0': {'admin_status': 'up', 'alias': 'eth0', 'description': 'Ethernet0', 'fec': 'rs', 'lanes': '65, 66', 'mtu': '9100', 'pfc_asym': 'on', 'speed': '40000', 'mode' : 'routed' },
+
+  91              'Ethernet4': {'admin_status': 'up', 'alias': 'eth4', 'description': 'Ethernet4', 'fec': 'rs', 'lanes': '67, 68', 'mtu': '9100', 'pfc_asym': 'on', 'speed': '40000', 'mode' : 'trunk'},
+  92              'Ethernet8': {'admin_status': 'up', 'alias': 'eth8', 'description': 'Ethernet8', 'fec': 'rs', 'lanes': '69, 70', 'mtu': '9100', 'pfc_asym': 'on', 'speed': '40000', 'mode' : 'trunk'},
+  93              'Ethernet8': {'admin_status': 'up', 'alias': 'eth8', 'description': 'Ethernet8', 'fec': 'rs', 'lanes': '69, 70', 'mtu': '9100', 'pfc_asym': 'on', 'speed': '40000', 'mode' : 'trunk'},
+  94:             'Ethernet12': {'admin_status': 'up', 'alias': 'eth12', 'description': 'Ethernet12', 'fec': 'rs', 'lanes': '71, 72', 'mtu': '9100', 'pfc_asym': 'on', 'speed': '40000', 'mode' : 'routed'},
+  95:             'Ethernet16': {'admin_status': 'up', 'alias': 'eth16', 'description': 'Ethernet16', 'fec': 'rs', 'lanes': '73, 74', 'mtu': '9100', 'pfc_asym': 'on', 'speed': '40000', 'mode' : 'routed'},
+  96:             'Ethernet20': {'admin_status': 'up', 'alias': 'eth20', 'description': 'Ethernet20', 'fec': 'rs', 'lanes': '75,76', 'mtu': '9100', 'pfc_asym': 'on', 'speed': '40000', 'mode' : 'routed'},
+  97:             'Ethernet24': {'admin_status': 'up', 'alias': 'eth24', 'description': 'Ethernet24', 'fec': 'rs', 'lanes': '77,78', 'mtu': '9100', 'pfc_asym': 'on', 'speed': '40000', 'mode' : 'routed'},
+  98:             'Ethernet28': {'admin_status': 'up', 'alias': 'eth28', 'description': 'Ethernet28', 'fec': 'rs', 'lanes': '79,80', 'mtu': '9100', 'pfc_asym': 'on', 'speed': '40000', 'mode' : 'routed'}
+  98              })
+  99              })
+
+src/sonic-config-engine/tests/test_cfggen_platformJson.py:
+  80          self.maxDiff = None
+  81          self.maxDiff = None
+  82:         expected = "{'index': '3', 'lanes': '8', 'description': 'Eth3/1', 'mtu': '9100', 'alias': 'Eth3/1', 'pfc_asym': 'off', 'speed': '25000','mode': 'routed','tpid': '0x8100'}"
+
+  82          self.assertEqual(utils.to_dict(output.strip()), utils.to_dict(expected))
+  83          self.assertEqual(utils.to_dict(output.strip()), utils.to_dict(expected))
+
+  86          self.maxDiff = None
+  87          self.maxDiff = None
+  88:         expected = "{'index': '29', 'lanes': '112', 'description': 'Eth29/1', 'mtu': '9100', 'alias': 'Eth29/1', 'pfc_asym': 'off', 'speed': '25000', 'mode': 'routed','tpid': '0x8100'}"
+
+  88          self.assertEqual(utils.to_dict(output.strip()), utils.to_dict(expected))
+  89          self.assertEqual(utils.to_dict(output.strip()), utils.to_dict(expected))
+
+  92          self.maxDiff = None
+  93          self.maxDiff = None
+  94:         expected = "{'index': '2', 'lanes': '4,5', 'description': 'Eth2/1', 'admin_status': 'up', 'mtu': '9100', 'alias': 'Eth2/1', 'pfc_asym': 'off', 'speed': '50000', 'mode': 'routed','tpid': '0x8100'}"
+  94          print(output.strip())
+  95          print(output.strip())
+
+src/sonic-config-engine/tests/test_minigraph_case.py:
+  159              utils.to_dict(output.strip()),
+  160              utils.to_dict(output.strip()),
+  161:             utils.to_dict("{'PortChannel01': {'admin_status': 'up', 'min_links': '1', 'mtu': '9100', 'tpid': '0x8100', 'lacp_key': 'auto', 'mode':'routed'}}")
+  161          )
+  162          )
+
+src/sonic-config-engine/tests/test_multinpu_cfggen.py:
+  165          self.assertDictEqual(output, \
+  166:                 {'PortChannel0002': {'admin_status': 'up', 'min_links': '2', 'mtu': '9100', 'tpid': '0x8100','mode': 'routed', 'lacp_key': 'auto' },
+  167:                  'PortChannel4001': {'admin_status': 'up', 'min_links': '2', 'mtu': '9100', 'tpid': '0x8100', 'mode': 'routed','lacp_key': 'auto'},
+  168:                  'PortChannel4002': {'admin_status': 'up', 'min_links': '2', 'mtu': '9100', 'tpid': '0x8100','mode': 'routed', 'lacp_key': 'auto'}})
+  169  
+
+  173          self.assertDictEqual(output, \
+  174:                 {'PortChannel4013': {'admin_status': 'up', 'min_links': '2', 'mtu': '9100', 'tpid': '0x8100', 'mode': 'routed','lacp_key': 'auto'},
+  175:                  'PortChannel4014': {'admin_status': 'up', 'min_links': '2', 'mtu': '9100', 'tpid': '0x8100', 'mode': 'routed','lacp_key': 'auto'}})
+  176  
+
+  221          self.assertDictEqual(output,
+  222:             {"Ethernet0": { "admin_status": "up",  "alias": "Ethernet1/1",  "asic_port_name": "Eth0-ASIC0",  "description": "01T2:Ethernet1",  "index": "0",  "lanes": "33,34,35,36",  "mtu": "9100", "tpid": "0x8100",  "mode": "routed", "pfc_asym": "off",  "role": "Ext",  "speed": "40000", "autoneg": "on" },
+  223:              "Ethernet4": { "admin_status": "up",  "alias": "Ethernet1/2",  "asic_port_name": "Eth1-ASIC0",  "description": "01T2:Ethernet2",  "index": "1",  "lanes": "29,30,31,32",  "mtu": "9100", "tpid": "0x8100", "mode": "routed","pfc_asym": "off",  "role": "Ext",  "speed": "40000", "autoneg": "on" },
+  224:              "Ethernet8": { "alias": "Ethernet1/3",  "asic_port_name": "Eth2-ASIC0",  "description": "Ethernet1/3",  "index": "2",  "lanes": "41,42,43,44",  "mtu": "9100", "tpid": "0x8100", "mode": "routed","pfc_asym": "off",  "role": "Ext",  "speed": "40000"},
+  225:              "Ethernet12": { "alias": "Ethernet1/4",  "asic_port_name": "Eth3-ASIC0",  "description": "Ethernet1/4",  "index": "3",  "lanes": "37,38,39,40",  "mtu": "9100", "tpid": "0x8100","mode": "routed", "pfc_asym": "off",  "role": "Ext",  "speed": "40000", "mode": "routed"},
+  226:              "Ethernet-BP0": { "admin_status": "up",  "alias": "Eth4-ASIC0",  "asic_port_name": "Eth4-ASIC0",  "description": "ASIC2:Eth0-ASIC2",  "index": "0",  "lanes": "13,14,15,16",  "mtu": "9100", "tpid": "0x8100","mode": "routed", "pfc_asym": "off",  "role": "Int",  "speed": "40000"},
+  227:              "Ethernet-BP4": { "admin_status": "up",  "alias": "Eth5-ASIC0",  "asic_port_name": "Eth5-ASIC0",  "description": "ASIC2:Eth1-ASIC2",  "index": "1",  "lanes": "17,18,19,20",  "mtu": "9100", "tpid": "0x8100","mode": "routed", "pfc_asym": "off",  "role": "Int",  "speed": "40000"},
+  228:              "Ethernet-BP8": { "admin_status": "up",  "alias": "Eth6-ASIC0",  "asic_port_name": "Eth6-ASIC0",  "description": "ASIC3:Eth0-ASIC3",  "index": "2",  "lanes": "21,22,23,24",  "mtu": "9100", "tpid": "0x8100","mode": "routed", "pfc_asym": "off",  "role": "Int",  "speed": "40000"},
+  229:              "Ethernet-BP12": { "admin_status": "up",  "alias": "Eth7-ASIC0",  "asic_port_name": "Eth7-ASIC0",  "description": "ASIC3:Eth1-ASIC3",  "index": "3",  "lanes": "25,26,27,28",  "mtu": "9100", "tpid": "0x8100", "mode": "routed","pfc_asym": "off",  "role": "Int",  "speed": "40000" }})
+  230  
+
+  234          self.assertDictEqual(output,
+  235:                 {"Ethernet0": { "admin_status": "up",  "alias": "Ethernet1/1",  "asic_port_name": "Eth0-ASIC0",  "description": "01T2:Ethernet1",  "index": "0",  "lanes": "33,34,35,36",   "mtu": "9100", "tpid": "0x8100", "mode": "routed",  "pfc_asym": "off",  "role": "Ext",  "speed": "40000", "autoneg": "on"},
+  236:                 "Ethernet4": { "admin_status": "up",  "alias": "Ethernet1/2",  "asic_port_name": "Eth1-ASIC0",  "description": "01T2:Ethernet2",  "index": "1",  "lanes": "29,30,31,32",   "mtu": "9100", "tpid": "0x8100", "mode": "routed", "pfc_asym": "off",  "role": "Ext",  "speed": "40000", "autoneg": "on" },
+  237:                 "Ethernet8": { "alias": "Ethernet1/3",  "asic_port_name": "Eth2-ASIC0",  "description": "Ethernet1/3",  "index": "2",  "lanes": "41,42,43,44",   "mtu": "9100", "tpid": "0x8100", "mode": "routed", "pfc_asym": "off",  "role": "Ext",  "speed": "40000" },
+  238:                 "Ethernet12": { "alias": "Ethernet1/4",  "asic_port_name": "Eth3-ASIC0",  "description": "Ethernet1/4",  "index": "3",  "lanes": "37,38,39,40",   "mtu": "9100", "tpid": "0x8100", "mode": "routed", "pfc_asym": "off",  "role": "Ext",  "speed": "40000" },
+  239:                 "Ethernet-BP0": { "admin_status": "up",  "alias": "Eth4-ASIC0",  "asic_port_name": "Eth4-ASIC0",  "description": "ASIC2:Eth0-ASIC2",  "index": "0",  "lanes": "13,14,15,16",   "mtu": "9100", "tpid": "0x8100","mode": "routed",  "pfc_asym": "off",  "role": "Int",  "speed": "40000"},
+  240:                     "Ethernet-BP4": { "admin_status": "up",  "alias": "Eth5-ASIC0",  "asic_port_name": "Eth5-ASIC0",  "description": "ASIC2:Eth1-ASIC2",  "index": "1",  "lanes": "17,18,19,20",   "mtu": "9100", "tpid": "0x8100",  "mode": "routed","pfc_asym": "off",  "role": "Int",  "speed": "40000" },
+  241:                     "Ethernet-BP8": { "admin_status": "up",  "alias": "Eth6-ASIC0",  "asic_port_name": "Eth6-ASIC0",  "description": "ASIC3:Eth0-ASIC3",  "index": "2",  "lanes": "21,22,23,24",   "mtu": "9100", "tpid": "0x8100", "mode": "routed", "pfc_asym": "off",  "role": "Int",  "speed": "40000" },
+  242:                     "Ethernet-BP12": { "admin_status": "up",  "alias": "Eth7-ASIC0",  "asic_port_name": "Eth7-ASIC0",  "description": "ASIC3:Eth1-ASIC3",  "index": "3",  "lanes": "25,26,27,28",   "mtu": "9100", "tpid": "0x8100", "mode": "routed", "pfc_asym": "off",  "role": "Int",  "speed": "40000"}})
+  243  
+
+src/sonic-config-engine/tests/test_yang_data.json:
+  13                      "speed": 40000,
+  14                      "speed": 40000,
+  15:                     "mode": "routed"
+
+  15                  },
+  16                  },
+
+  49                      "speed": 40000,
+  50                      "speed": 40000,
+  51:                     "mode" : "routed"
+
+  51                  },
+  52                  },
+
+  61                      "speed": 40000,
+  62                      "speed": 40000,
+  63:                     "mode" : "routed"
+
+  63                  },
+  64                  },
+
+  73                      "speed": 40000,
+  74                      "speed": 40000,
+  75:                     "mode" : "routed"
+
+  75                  },
+  76                  },
+
+  85                      "speed": 40000,
+  86                      "speed": 40000,
+  87:                     "mode" : "routed"
+
+  87                  },
+  88                  },
+
+  97                      "speed": 40000,
+  98                      "speed": 40000,
+  99:                     "mode" : "routed"
+  99                  }
+  100                  }
+
+src/sonic-frr-mgmt-framework/templates/ospfd/ospfd.conf.db.distributeroute.j2:
+   1  {% set routeproto = routekey[1] %}
+   2: {% set routedirection = routekey[2] %}
+   3  {% set generic_protocols = [ "BGP", "KERNEL", "STATIC", "DIRECTLY_CONNECTED"]  %}
+   4: {% if routeproto == "DEFAULT_ROUTE" and routedirection == "IMPORT"  %}
+   5  {% set defaultinfo_cmd = '' %}
+
+  23   {{ defaultinfo_cmd }}
+  24: {% elif routedirection == "IMPORT" and routeproto in generic_protocols %}
+  25  {% set redistribute_cmd = '' %}
+
+  42   {{ redistribute_cmd }}
+  43: {% elif routedirection == "EXPORT" and routeproto in generic_protocols %}
+  44  {% if 'route-map' in route_instance %}
+
+src/sonic-yang-models/tests/files/sample_config_db.json:
+   99                  "lacp_key": "auto",
+  100:                 "mode":"routed"
+  101              },
+
+  116                  "fallback" : "true",
+  117:                 "mode":"routed"
+  118              }
+
+  633                  "subport": "5",
+  634:                 "mode":"routed"
+  635              },
+
+  643                  "subport": "6",
+  644:                 "mode":"routed"
+  645              },
+
+  653                  "subport": "7",
+  654:                 "mode":"routed"
+  655              },
+
+  663                  "subport": "8",
+  664:                 "mode":"routed"
+  665              },
+
+  672                  "admin_status": "up",
+  673:                 "mode":"routed"
+  674              },
+
+  681                  "admin_status": "up",
+  682:                 "mode":"routed"
+  683              },
+
+  690                  "admin_status": "up",
+  691:                 "mode":"routed"
+  692              },
+
+  699                  "admin_status": "up",
+  700:                 "mode":"routed"
+  701              },
+
+  708                  "admin_status": "up",
+  709:                 "mode":"routed"
+  710              },
+
+  717                  "admin_status": "up",
+  718:                 "mode":"routed"
+  719              },
+
+  726                  "admin_status": "up",
+  727:                 "mode":"routed"
+  728              },
+
+  735                  "admin_status": "up",
+  736:                 "mode":"routed"
+  737              },
+
+  744                  "admin_status": "up",
+  745:                 "mode":"routed"
+  746              },
+
+  753                  "admin_status": "up",
+  754:                 "mode":"routed"
+  755              },
+
+  762                  "admin_status": "up",
+  763:                 "mode":"routed"
+  764              },
+
+  771                  "admin_status": "up",
+  772:                 "mode":"routed"
+  773              },
+
+  780                  "admin_status": "up",
+  781:                 "mode":"routed"
+  782              },
+
+  789                  "admin_status": "up",
+  790:                 "mode":"routed"
+  791              },
+
+  798                  "admin_status": "up",
+  799:                 "mode":"routed"
+  800              },
+
+  807                  "admin_status": "up",
+  808:                 "mode":"routed"
+  809              },
+
+  816                  "admin_status": "up",
+  817:                 "mode":"routed"
+  818              },
+
+  825                  "admin_status": "up",
+  826:                 "mode":"routed"
+  827              },
+
+  907                  "admin_status": "up",
+  908:                 "mode":"routed"
+  909              },
+
+  917                  "admin_status": "up",
+  918:                 "mode":"routed"
+  919              },
+
+  931                  "tpid": "0x8100",
+  932:                 "mode":"routed"
+  933              },
+
+  945                  "tpid": "0x8100",
+  946:                 "mode":"routed"
+  947              }
+
+src/sonic-yang-models/tests/yang_model_tests/tests/port.json:
+  24          "eStrKey" : "Pattern",
+  25:         "eStr": ["routed|access|trunk"]
+  26      },
+
+src/sonic-yang-models/tests/yang_model_tests/tests/portchannel.json:
+  24          "eStrKey" : "Pattern",
+  25:         "eStr": ["routed|access|trunk"]
+  26      },
+
+src/sonic-yang-models/tests/yang_model_tests/tests_config/interface.json:
+   30                          "speed": 25000,
+   31:                         "mode":"routed"
+   32                      },
+
+   40                          "speed": 25000,
+   41:                         "mode":"routed"
+   42                      }
+
+   76                          "speed": 25000,
+   77:                         "mode":"routed"
+   78                      }
+
+  110                          "speed": 25000,
+  111:                         "mode":"routed"
+  112                      }
+
+  147                          "speed": 25000,
+  148:                         "mode":"routed"
+  149                      }
+
+  184                          "speed": 25000,
+  185:                         "mode":"routed"
+  186                      }
+
+  213                          "speed": 25000,
+  214:                         "mode":"routed"
+  215                      }
+
+  242                          "speed": 25000,
+  243:                         "mode":"routed"
+  244                      }
+
+  271                          "speed": 25000,
+  272:                         "mode":"routed"
+  273                      }
+
+src/sonic-yang-models/tests/yang_model_tests/tests_config/mclag.json:
+   23                          "speed": 25000,
+   24:                         "mode":"routed"
+   25                      }
+
+  315                          "speed": 25000,
+  316:                         "mode":"routed"
+  317                      }
+
+src/sonic-yang-models/tests/yang_model_tests/tests_config/port.json:
+   16                          "speed": 25000,
+   17:                         "mode":"routed"
+   18                      }
+
+   37                          "speed": 25000,
+   38:                         "mode":"routed"
+   39                      }
+
+   53                          "mtu": 68,
+   54:                         "mode":"routed"
+   55                      }
+
+   69                          "mtu": 9216,
+   70:                         "mode":"routed"
+   71                      }
+
+  103                          "autoneg": "on",
+  104:                         "mode":"routed"
+  105                      }
+
+  121                          "autoneg": "off",
+  122:                         "mode":"routed"
+  123                      }
+
+  139                          "autoneg": 0,
+  140:                         "mode":"routed"
+  141                      }
+
+  448                          "link_training": "on",
+  449:                         "mode":"routed"
+  450                      }
+
+  466                          "link_training": "off",
+  467:                         "mode":"routed"
+  468                      }
+
+  556                           "subport": 9,
+  557:                          "mode":"routed"
+  558                       }
+
+  573                          "subport": 1,
+  574:                         "mode":"routed"
+  575                      },
+
+  581                          "subport": 2,
+  582:                         "mode":"routed"
+  583                      },
+
+  589                          "subport": 3,
+  590:                         "mode":"routed"
+  591  
+
+  598                          "subport": 4,
+  599:                         "mode":"routed"
+  600                      }
+
+src/sonic-yang-models/tests/yang_model_tests/tests_config/portchannel.json:
+   14                          "speed": 25000,
+   15:                         "mode": "routed"
+   16                      }
+
+   31                          "fallback" : "false",
+   32:                         "mode" :  "routed"
+   33                      }
+
+   49                          "speed": 25000,
+   50:                         "mode": "routed"
+   51                      }
+
+   62                          "name": "PortChannel0001",
+   63:                         "mode": "routed"
+   64                      }
+
+   80                          "speed": 25000,
+   81:                         "mode": "routed"
+   82                      }
+
+   93                          "name": "PortChannel0001",
+   94:                         "mode":"routed"
+   95                      }
+
+  345                          "speed": 25000,
+  346:                         "mode": "routed"
+  347                      }
+
+  358                          "name": "PortChannel0001",
+  359:                         "mode":"routed"
+  360                      }
+
+  391                          "speed": 25000,
+  392:                         "mode": "routed"
+  393                      }
+
+  404                          "name": "PortChannel0001",
+  405:                         "mode": "routed"
+  406                      }
+
+  436                          "speed": 25000,
+  437:                         "mode": "routed"
+  438                      }
+
+  449                          "name": "PortChannel0001",
+  450:                         "mode": "routed"
+  451                      }
+
+  488                          "name": "PortChannel0001",
+  489:                         "mode": "routed"
+  490                      }
+
+  514                          "speed": 25000,
+  515:                         "mode": "routed"
+  516                      }
+
+  527                          "name": "PortChannel0001",
+  528:                         "mode": "routed"
+  529                      }
+
+src/sonic-yang-models/tests/yang_model_tests/tests_config/vlan.json:
+   92                          "speed": 25000,
+   93:                         "mode":"routed"
+   94                      }
+
+  150                          "speed": 25000,
+  151:                         "mode":"routed"
+  152                      }
+
+  190                          "speed": 25000,
+  191:                         "mode":"routed"
+  192                      },
+
+  199                          "speed": 25000,
+  200:                         "mode":"routed"
+  201                      }
+
+  329                          "speed": 25000,
+  330:                         "mode":"routed"
+  331                      }
+
+  696                          "speed": 25000,
+  697:                         "mode":"routed"
+  698                      }
+
+src/sonic-yang-models/yang-models/sonic-interface.yang:
+  84                  leaf loopback_action {
+  85:                     description "Packet action when a packet ingress and gets routed on the same IP interface";
+  86                      type stypes:loopback_action;
+
+src/sonic-yang-models/yang-models/sonic-mirror-session.yang:
+  94                      description
+  95:                         "ERSPAN destination ip. Mirrored frames will be routed to this destination.
+  96                          This IP will be set as destination ip in outer header of mirrored frame ";
+
+src/sonic-yang-models/yang-models/sonic-port.yang:
+  55  				leaf mode {
+  56: 					description "SwitchPort Modes possible values are routed|access|trunk. Default value is routed."; 
+  57  					type stypes:switchport_mode; 
+  58: 					default "routed";
+  59  				}
+
+src/sonic-yang-models/yang-models/sonic-portchannel.yang:
+   67                 leaf mode {
+   68:                    description "PortChannel SwitchPort Mode possible values are routed|access|trunk. Default value is routed.";
+   69                     type stypes:switchport_mode;
+   70:                    default "routed";
+   71  
+
+  169                  leaf loopback_action {
+  170:                     description "Packet action when a packet ingress and gets routed on the same IP interface";
+  171                      type stypes:loopback_action;
+
+src/sonic-yang-models/yang-models/sonic-vlan-sub-interface.yang:
+  77                  leaf loopback_action {
+  78:                     description "Packet action when a packet ingress and gets routed on the same IP interface";
+  79                      type stypes:loopback_action;
+
+src/sonic-yang-models/yang-models/sonic-vlan.yang:
+  112                  leaf loopback_action {
+  113:                     description "Packet action when a packet ingress and gets routed on the same IP interface";
+  114                      type stypes:loopback_action;
+
+src/sonic-yang-models/yang-templates/sonic-types.yang.j2:
+  213          type string {
+  214:             pattern "routed|access|trunk";
+  215          }
