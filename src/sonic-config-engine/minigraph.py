@@ -1850,7 +1850,7 @@ def parse_xml(filename, platform=None, port_config_file=None, asic_name=None, hw
         port['tpid'] = '0x8100'
         # Check if 'mode' attribute exists, and if not, set the default mode to 'routed'
         if 'mode' not in port:
-            if port_name in vlan_member_keys:
+            if port_name in vlan_members:
                  port['mode'] = 'trunk'
             else:
                  port['mode'] = 'routed'
@@ -1926,7 +1926,7 @@ def parse_xml(filename, platform=None, port_config_file=None, asic_name=None, hw
         pc['tpid'] = '0x8100'
         pc['admin_status'] = 'up'
         if 'mode' not in pc:
-            if pc_name in vlan_member_keys:
+            if pc_name in vlan_members:
                  pc['mode'] = 'trunk'
             else:
                  pc['mode'] = 'routed' 
