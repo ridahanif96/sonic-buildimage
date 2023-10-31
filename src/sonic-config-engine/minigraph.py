@@ -1140,6 +1140,7 @@ def parse_linkmeta(meta, hname):
             linkmetas[port]["MacSecEnabled"] = macsec_enabled
         if tx_power:
             linkmetas[port]["tx_power"] = tx_power
+        
         # Convert the freq in GHz
         if laser_freq:
             linkmetas[port]["laser_freq"] = int(float(laser_freq)*1000)
@@ -1841,13 +1842,17 @@ def parse_xml(filename, platform=None, port_config_file=None, asic_name=None, hw
             else:
                 # for the ports w/o neighbor info, set it to port alias
                 port['description'] = port.get('alias', port_name)
+    
 
     # set default port MTU as 9100 and default TPID 0x8100 and default mode routed
     for port in ports.values():
         port['mtu'] = '9100'
         port['tpid'] = '0x8100'
-        port['mode'] = 'routed'
-
+        if 'mode' not in port:
+        if port_name in vlan_member_keys:
+            port['mode'] = 'trunk'
+        else:
+            port['mode'] = 'routed' 
 
     # asymmetric PFC is disabled by default
     for port in ports.values():
@@ -1919,10 +1924,12 @@ def parse_xml(filename, platform=None, port_config_file=None, asic_name=None, hw
         pc['mtu'] = '9100'
         pc['tpid'] = '0x8100'
         pc['admin_status'] = 'up'
-        pc['mode'] = 'routed'
-
-
-
+        if 'mode' not in pc:
+        if pc_name in vlan_member_keys:
+            port['mode'] = 'trunk'
+        else:
+            port['mode'] = 'routed' 
+        
     results['PORTCHANNEL'] = pcs
     results['PORTCHANNEL_MEMBER'] = pc_members
 
