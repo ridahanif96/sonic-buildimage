@@ -1904,7 +1904,7 @@ def parse_xml(filename, platform=None, port_config_file=None, asic_name=None, hw
     if bool( fabric_monitor ):
         results[ 'FABRIC_MONITOR' ] = fabric_monitor
 
-    # parse fabric
+    # parse fabric                                                                                                                                                                                                           
     fabric_ports = get_fabric_port_config(hwsku=hwsku, platform=platform, fabric_port_config_file=fabric_port_config_file, asic_name=asic_name, hwsku_config_file=hwsku_config_file)
     if bool( fabric_ports ):
         results['FABRIC_PORT'] = fabric_ports
@@ -1927,7 +1927,7 @@ def parse_xml(filename, platform=None, port_config_file=None, asic_name=None, hw
         pc['tpid'] = '0x8100'
         pc['admin_status'] = 'up'
         if 'mode' not in pc:
-            if pc in vlan_members:
+            if pc_name in vlan_members:
                  pc['mode'] = 'trunk'
             else:
                  pc['mode'] = 'routed'
