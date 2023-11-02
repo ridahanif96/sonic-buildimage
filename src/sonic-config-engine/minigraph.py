@@ -1916,6 +1916,7 @@ def parse_xml(filename, platform=None, port_config_file=None, asic_name=None, hw
             # when port_config.ini exists
             if (pc_name, pc_member) in pc_members and pc_member not in port_set:
                 print("Warning: ignore '%s' as at least one of its member interfaces ('%s') is not in the port_config.ini" % (pc_name, pc_member), file=sys.stderr)
+
                 del pcs[pc_name]
                 pc_mbr_del_keys = [f for f in list(pc_members.keys()) if f[0] == pc_name]
                 for pc_mbr_del_key in pc_mbr_del_keys:
@@ -1927,7 +1928,7 @@ def parse_xml(filename, platform=None, port_config_file=None, asic_name=None, hw
         pc['tpid'] = '0x8100'
         pc['admin_status'] = 'up'
         if 'mode' not in pc:
-            if pc_name in vlan_members:
+            if pc['name'] in vlan_members:
                  pc['mode'] = 'trunk'
             else:
                  pc['mode'] = 'routed'
