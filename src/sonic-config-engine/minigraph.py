@@ -1928,8 +1928,8 @@ def parse_xml(filename, platform=None, port_config_file=None, asic_name=None, hw
         pc['tpid'] = '0x8100'
         pc['admin_status'] = 'up'
         if 'mode' not in pc:
-            if pc_name in vlan_members:
-                 pc['mode'] = 'trunk'
+            if port_channels in vlan_members:
+                 pc['mode'] o= 'trunk'
             else:
                  pc['mode'] = 'routed'
 
