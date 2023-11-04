@@ -1929,7 +1929,7 @@ def parse_xml(filename, platform=None, port_config_file=None, asic_name=None, hw
         pc['admin_status'] = 'up'
         if 'mode' not in pc:
             if port_channels in vlan_members:
-                 pc['mode'] o= 'trunk'
+                 pc['mode'] = 'trunk'
             else:
                  pc['mode'] = 'routed'
 
