@@ -28,7 +28,7 @@
                         "mtu": 9000,
                         "name": "Ethernet8",
                         "speed": 25000,
-                        "mode":"routed"
+                        "mode":"trunk"
                     },
                     {
                         "admin_status": "up",
@@ -74,7 +74,7 @@
                         "mtu": 9000,
                         "name": "Ethernet8",
                         "speed": 25000,
-                        "mode":"routed"
+                        "mode":"trunk"
                     }
                 ]
             }
@@ -108,7 +108,7 @@
                         "mtu": 9000,
                         "name": "Ethernet8",
                         "speed": 25000,
-                        "mode":"routed"
+                        "mode":"trunk"
                     }
                 ]
             }
@@ -145,7 +145,7 @@
                         "mtu": 9000,
                         "name": "Ethernet8",
                         "speed": 25000,
-                        "mode":"routed"
+                        "mode":"trunk"
                     }
                 ]
             }
@@ -182,7 +182,7 @@
                         "mtu": 9000,
                         "name": "Ethernet8",
                         "speed": 25000,
-                        "mode":"routed"
+                        "mode":"trunk"
                     }
                 ]
             }
@@ -211,7 +211,7 @@
                         "mtu": 9000,
                         "name": "Ethernet8",
                         "speed": 25000,
-                        "mode":"routed"
+                        "mode":"trunk"
                     }
                 ]
             }
@@ -240,7 +240,7 @@
                         "mtu": 9000,
                         "name": "Ethernet8",
                         "speed": 25000,
-                        "mode":"routed"
+                        "mode":"trunk"
                     }
                 ]
             }
@@ -269,7 +269,7 @@
                         "mtu": 9000,
                         "name": "Ethernet8",
                         "speed": 25000,
-                        "mode":"routed"
+                        "mode":"trunk"
                     }
                 ]
             }
