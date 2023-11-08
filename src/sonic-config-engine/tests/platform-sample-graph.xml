@@ -82,7 +82,7 @@
           <PortName>0</PortName>
           <Priority>0</Priority>
           <Speed>50000</Speed>
-          <Mode>trunk</Mode>
+          <Mode>routed</Mode>
         </a:EthernetInterface>
         <a:EthernetInterface>
           <ElementType>DeviceInterface</ElementType>
