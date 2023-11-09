@@ -69,7 +69,6 @@
           <PortName>0</PortName>
           <Priority>0</Priority>
           <Speed>100000</Speed>
-          <Mode>routed</Mode>
         </a:EthernetInterface>
         <a:EthernetInterface>
           <ElementType>DeviceInterface</ElementType>
@@ -82,7 +81,6 @@
           <PortName>0</PortName>
           <Priority>0</Priority>
           <Speed>50000</Speed>
-          <Mode>routed</Mode>
         </a:EthernetInterface>
         <a:EthernetInterface>
           <ElementType>DeviceInterface</ElementType>
@@ -95,7 +93,6 @@
           <PortName>0</PortName>
           <Priority>0</Priority>
           <Speed>50000</Speed>
-          <Mode>routed</Mode>
         </a:EthernetInterface>
         <a:EthernetInterface>
           <ElementType>DeviceInterface</ElementType>
@@ -108,7 +105,6 @@
           <PortName>0</PortName>
           <Priority>0</Priority>
           <Speed>100000</Speed>
-          <Mode>routed</Mode>
         </a:EthernetInterface>
       </EthernetInterfaces>
       <FlowControl>true</FlowControl>
